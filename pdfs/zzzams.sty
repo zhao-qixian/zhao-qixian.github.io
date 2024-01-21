@@ -299,6 +299,8 @@
 	\DeclareMathOperator{\Pic}{Pic}
 	\DeclareMathOperator{\gr}{gr}
 	\DeclareMathOperator{\Mod}{Mod}
+	\DeclareMathOperator{\Id}{Id}
+	\DeclareMathOperator{\id}{id}
 }{}
 %--------------------------------------------------
 
@@ -307,7 +309,7 @@
 %%% << Environments and Numbering >>
 %=====================================================
 % - Enumeration 
-\usepackage{enumitem}
+\RequirePackage{enumitem}
 
 
 % - Equations ---------------------------
@@ -333,6 +335,7 @@
 \newtheorem*{prop}{Proposition}
 \newtheorem*{cor}{Corollary}
 \newtheorem*{lem}{Lemma}
+\newtheorem{conjecture}[equation]{Conjecture}
 \renewcommand\qedsymbol{$\centerdot$}
 
 % -- Named Theorem: ``\begin{namedtheorem}[Name of the Theorem]''
