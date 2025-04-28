@@ -39,6 +39,7 @@
 	/styleoptions/fontshortcuts/.new        toggle,
 	/styleoptions/extgraphics/.new          toggle,
 	/styleoptions/eulatino/.new             toggle,
+	/styleoptions/pxpazo/.new               toggle,
 	/styleoptions/addressfirstpage/.new     toggle,
 	/styleoptions/articlesectitle/.new      toggle,
 	/styleoptions/numberbasedon/.new        value = {section},
@@ -69,6 +70,12 @@
 	\RequirePackage{euler}
 	\RequirePackage{fontspec}
 	\setmainfont{Palatino Linotype}%
+}{}
+
+%[O][P] Option that uses NewPX + Pazo fonts
+\iftoggle{/styleoptions/pxpazo}{%
+	\RequirePackage{newpxtext}
+	\RequirePackage{mathpazo}%
 }{}
 %-------------------------------------------------
 
@@ -366,6 +373,7 @@
 \newtheorem*{notn}{Notation}
 \newtheorem{question}[equation]{Question}
 \newtheorem*{questn}{Question}
+\newtheorem{clause}[equation]{}
 
 % - Remarks -------------------------------------
 \theoremstyle{remark}
