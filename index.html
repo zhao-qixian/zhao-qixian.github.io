@@ -27,12 +27,11 @@
 
 	<!-- Show/hide pages -->
 	<script>
-	function show(shown, hidden1, hidden2, hidden3, hidden4) {
+	function show(shown, hidden1, hidden2, hidden3) {
 		document.getElementById(shown).style.display='block';
 		document.getElementById(hidden1).style.display='none';
 		document.getElementById(hidden2).style.display='none';
 		document.getElementById(hidden3).style.display='none';
-		document.getElementById(hidden4).style.display='none';
 		return false;
 		}
 	</script>
@@ -64,11 +63,10 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="#" onclick="return show('home-page','research-page','talks-page','teaching-page','misc-page');" style="text-decoration: none">Home</a></li>
-					<li><a href="#" onclick="return show('research-page','home-page','talks-page','teaching-page','misc-page');" style="text-decoration: none">Research</a></li>
-					<li><a href="#" onclick="return show('talks-page','home-page','research-page','teaching-page','misc-page');"  style="text-decoration: none">Talks & Seminars</a></li>
-					<li><a href="#" onclick="return show('teaching-page','home-page','talks-page','research-page','misc-page');"  style="text-decoration: none">Teaching</a></li>
-					<li><a href="#" onclick="return show('misc-page','home-page','talks-page','teaching-page','research-page');"  style="text-decoration: none">Misc</a></li>
+					<li><a href="#" onclick="return show('home-page','research-page','talks-page','misc-page');" style="text-decoration: none">Home</a></li>
+					<li><a href="#" onclick="return show('research-page','home-page','talks-page','misc-page');" style="text-decoration: none">Research</a></li>
+					<li><a href="#" onclick="return show('talks-page','home-page','research-page','misc-page');"  style="text-decoration: none">Talks & Seminars</a></li>
+					<li><a href="#" onclick="return show('misc-page','home-page','talks-page','research-page');"  style="text-decoration: none">Misc</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -271,46 +269,6 @@
 		
 	</div>
 	<!-- Talks page end -->
-	
-	<!-- Teaching page -->
-	<div id="teaching-page" style="display: none">
-		
-		<!-- Hero section -->
-		<section class="hero-section">
-			<div class="hero-slider owl-carousel">
-				<div class="hs-item set-bg" data-setbg="img/dirty_board.jpg">
-					<div class="hs-text">
-						<div class="container">
-							<h2 style="text-shadow: 1px 1px #000000">
-								<span>Tea</span>ching
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Hero section end -->	
-		
-		<!-- Teaching secion -->
-		<section class="teaching-section">
-			<div class="text-box">
-				<div class="tb-text">
-					<div class="container" style="padding-top: 30px">
-						<p> I am currently not teaching any course. <br>
-						Check my <a href="pdfs/CV.pdf"> CV</a> for courses I taught. </p>
-						<!--
-						<p>Fall 2022: College Algebra, <b>Math 1050-006</b>, Instructor.<br>							
-						Please check Canvas page for course materials.</p>
-						-->
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Teaching section end -->
-		
-	</div>
-	<!-- Teaching page end -->
-
 		
 	<!-- Misc page -->
 	<div id="misc-page" style="display: none">
