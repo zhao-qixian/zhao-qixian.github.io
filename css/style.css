@@ -899,3 +899,43 @@ a:active {
 		font-size: 40px;
 	}
 }
+
+
+/* All screen sizes: fix alignment and overflow */
+.text-box .tb-text,
+.text-box .tb-text-emph,
+.hero-slider .hs-text {
+    left: 0;
+}
+
+.text-box .tb-text p,
+.text-box .tb-text ul {
+    left: 0;
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+
+    /* Shorter banner */
+    .hero-slider .hs-item {
+        height: 240px;
+        padding: 0;
+    }
+
+    .hero-slider .hs-text {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Consistent Research page text width */
+    #research-page .tb-text p,
+    #research-page .tb-text li {
+        padding-right: 0 !important;
+    }
+
+    /* Responsive photo */
+    #misc-page img {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
